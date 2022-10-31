@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          padding: {
+            '2': '2px',
+            '10': '10px',
+            '15': '15px',
+            '3': '3px',
+            '16': '16px',
+            '22': '22px',
+            '23': '23px',
+            '25': '25px',
+            '28': '28px',
+            '30': '30px',
+            '35': '35px',
+            '38': '38px',
+            '23': '23px',
+            '60': '60px',
+            '50': '50px',
+            '62': '62px',
+            '64': '64px',
+            '68': '68px',
+            '48': '48px',
+            '57': '57px',
+            '83': '83px',
+            '84': '84px',
+            '100': '100px',
+            '113': '113px',
+            '90': '90px',
+            '140': '140px',
+            '150': '150px',
+            '160': '160px',
+            '164': '164px',
+            '167': '167px',
+            '171': '171px',
+            '178': '178px',
+            '302': '302px',
+            '164': '164px',
+            '170': '170px',
+            '200': '200px',
+            '272': '272px',
+            '27': '27px',
+            '87': '87px',
+            '70': '70px',
+            '196': '196px',
+            '310': '310px',
+            '320': '320px',
+            '300': '300px',
+            '330': '330px',
+            '400': '400px',
+            '600': '600px',
+            '700': '700px',
+
+          },
+          margin: {
+            '25': '25px',
+            '64': '64px',
+            '84': '84px',
+            '57': '57px',
+
+          },
+          maxWidth: {
+            '118': '118px',
+            '218': '218px',
+            '304': '304px',
+            '374': '374px',
+            '390': '390px',
+          },
+          space: {
+            '22': '22px',
+            '5': '5px',
+            '10': '10px',
+            '30': '30px',
+            '35': '35px',
+            '38': '38px',
+            '42': '42px',
+            '18': '18px',
+            '40': '40px',
+            '50': '50px',
+            '70': '70px',
+            '65': '65px',
+            '317': '317px',
+
+          },
+          width: {
+            '120': '120px',
+          },
+        screens: {
+        ms: '320px',
+        // ms_gap: "350px",
+        // ms1: "375px",
+        // xs_before: "400px",
+        xs: '425px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1140px',
+        xxl: '1536px',
+        tap: "700px",
+      },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+
+    <!-- content 1  -->
+    <nav class="bg-white py-2 md:py-4 sticky top-0" id="scrollbar_position">
+      <div class="container px-4 mx-auto md:flex md:items-center">
+
+        <div class="flex justify-between items-center">
+          <a href="#" class="font-bold text-3xl text-indigo-600 text-black">Chola</a>
+          <button
+            class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+            id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+          <a id="id1" href="#scrollbar_position1"
+            class="p-2 lg:px-4 md:mx-2  text-black rounded  font-semibold hover:underline underline-offset-8">Home</a>
+          <a id="id2" href="#security_solutions"
+            class="p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8 font-semibold">Security
+            Solutions</a>
+          <a id="id3" href="#interior_works"
+            class="p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold">Interior
+            Works</a>
+          <a id="id4" href="#contact_us"
+            class="p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold">Contact
+            Us</a>
+          <!-- underline underline-offset-8 -->
+          <!-- <BsBag class="h-6 w-6"/>
+            <div class="-ml-[16px]">
+            <a href="#" class=" lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold">Shopping bag(0)</a>
+            </div> -->
+          <!-- <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>  -->
+          <!-- <a href="#" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a>  -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- content 2 -->
+    <div id="scrollbar_position1" class="">
+      <div class="flex items-center flex-col pt-28 space-y-[20px]">
+        <img class="rounded" src="D:/git/mine/frontend-design-folder/images/home_chola_logo.png" alt="chola_home"/>
+        <p class="text-9xl text-sky-500 ms:text-center ms:text-4xl">Chola</p>
+        <p class="font-serif font-semibold text-3xl ms:text-center ms:w-[320px] ms:text-xl xs:w-full ">Security Solution & Interior Works</p>
+        <p class=" font-serif text-2xl text-[#ff834f] ms:text-center ms:text-xl">"We are here to do better"</p>
+        <!-- <p class="pt-48"><button type="button"
+            class="focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-14 py-3.5 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Our
+            Store</button></p> -->
+      </div>
+    </div>
+
+    <!-- heading content addded -->
+    <div class="text-center p-14 text-4xl font-semibold">Security Solutions</div>
+
+    <!-- content 3 -->
+    <div class="pt-50" id="security_solutions">
+      <div class="md:flex justify-center px-10 mx-auto">
+        <Image class="mr-25 rounded shadow-xl ms:rounded " src="D:/git/mine/frontend-design-folder/images/cctv1.jpg" width="392" height="432"
+          alt="image1" />
+        <Image class="rounded shadow-xl mr-25 -translate-y-[65px] ms:translate-y-[0px] ms:rounded " src="D:/git/mine/frontend-design-folder/images/Master.webp" width="392" height="432" alt="image2" />
+        <Image class="rounded shadow-xl ms:top-0 ms:rounded " src="D:/git/mine/frontend-design-folder/images/cctv3.jpg" width="392" height="432"
+          alt="image3" />
+      </div>
+    </div>
+
+    <!-- content 4  -->
+    <div class="xs:pt-160 ms:pt-100">
+      <div class="xs:pl-167 ms:pl-0 ms:text-center ms:pb-10">
+        <p>WHO WE ARE</p>
+      </div>
+      <div class="xs:pl-171 xs:flex xs:space-x-317 ms:pl-0 ms:flex ms:flex-col  ms:space-y-10">
+        <div class="xs:max-w-280 xs:text-5xl ms:text-2xl pl-22 ms:text-center">It's not just Camera - it's our security</div>
+        <div class="xs:max-w-[280px] ms:text-sm pl-22">CCTV systems are able to keep track of what is happening at the premises where they are
+          installed. By monitoring the activity of workers and visitors at your business’ site, you and your workforce
+          can have total peace of mind about exactly what is going on under your roof.</div>
+      </div>
+      <div>
+        <!-- content 5 -->
+        <div class="ms:pt-100">
+          <div class="pt-302 pl-164 ms:pl-0 ms:pt-0  ms:text-center ms:pb-10">OUR CREDO</div>
+
+          <div class="pl-170 flex space-x-40 ms:space-x-0 ms:pl-0 ms:flex flex-col" id="interior_works">
+            <div class="flex flex-col space-y-38 ms:space-y-10">
+              <div class="max-w-218 text-5xl ms:text-2xl ms:max-w-[280px] ms:text-center">Interior Works and Desgins</div>
+              <div class="max-w-374 ms:pb-22 ms:max-w-[290px] ms:text-sm ms:pl-35">We have made quality our habit. It’s not something that we just strive for – we
+                live by this principle every day.While most of the things about the creative process will be forgotten, the excellence of our products
+                and services will be remembered.</div>
+            </div>
+            <div class="-mt-84 ms:-mt-0">
+              <Image class="rounded-md ms:max-w-full ms:h-auto" src="D:/git/mine/frontend-design-folder/images/interior_designs.jpg" class="" width="600"
+                height="496" />
+            </div>
+          </div>
+        </div>
+
+        <!-- content 6  -->
+       
+
+        <div class="pt-150 ms:pt-100">
+          <div class="text-center pb-62 text-3xl">Our Recent Works</div>
+           <!-- image slider start -->
+        <!-- component -->
+<!-- This is an example component -->
+<div class="max-w-2xl mx-auto">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work1.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work2.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work3.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+              <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work5.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+             <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work6.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+             <!-- Item 6 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="D:/git/mine/frontend-design-folder/images/recent_work7.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+
+	<!-- <p class="mt-5">This carousel slider component is part of a larger, open-source library of Tailwind CSS components. Learn
+		more
+		by going to the official <a class="text-blue-600 hover:underline"
+			href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
+	</p> -->
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+    <!-- image slider end-->
+
+          <!-- <div class="flex justify-center space-x-18">
+            <div>
+              <Image class="" src="D:/git/mine/frontend-design-folder/images/recent_work1.jpeg" width="242" height="242"
+                alt="image5" />
+            </div>
+            <div>
+              <Image class="" src="D:/git/mine/frontend-design-folder/images/recent_work1.jpeg" width="242" height="242"
+                alt="image6" />
+            </div>
+            <div>
+              <Image class="" src="D:/git/mine/frontend-design-folder/images/recent_work1.jpeg" width="242" height="242"
+                alt="image7" />
+            </div>
+            <div>
+              <Image class="" src="D:/git/mine/frontend-design-folder/images/recent_work1.jpeg" width="242" height="242"
+                alt="image8" />
+            </div>
+          </div> -->
+          <!-- <p class="pt-48 text-center"><button type="button"
+              class="focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-14 py-3.5 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Follow
+              Us</button></p> -->
+
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- content 7 -->
+    <div>
+      <div class="pt-200 pl-170 flex space-x-65 ms:pl-0 ms:space-x-0 ms:flex flex-col ms:pt-100">
+        <div class="flex flex-col space-y-42 ms:text-center ms:space-y-10">
+          <div class="text-5xl ms:text-2xl">Contact us</div>
+          <div class="ms:text-center ms:pb-10">Left your e-mail and we will contact you soon</div>
+          <!-- <div class="font-serif text-xl">Er.R.Raguram DCE.,B.E.,</div>
+            <div class="font-serif text-xl">7010311805-9025790322</div>
+            <div class="font-serif text-xl">cholarr6@gmail.com</div>
+            <div class="font-serif text-xl">61B,Kadaiveethi,Sirkali-609110</div> -->
+        </div>
+        <div class="flex flex-col ms:pl-4 ms:max-w-[280px]">
+          <label>Name</label>
+          <input class="bg-gray-300 h-[50px] w-[550px] mb-[33px] ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Your Name" />
+          <label>Last Name</label>
+          <input class="bg-gray-300 h-[50px] w-[550px]  mb-[33px]  ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Last Name" />
+          <label>Email</label>
+          <input class="bg-gray-300 h-[50px] w-[550px]  mb-[33px]  ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="example@gmail.com" />
+          <label>Message</label>
+          <input class="bg-gray-300 h-[94px] w-[550px]  ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Enter Your Message" />
+        </div>
+      </div>
+      <!-- <p class="pt-48 text-center -ml-[45px]"><button type="button"
+          class="focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-14 py-3.5 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Contact
+          me</button></p> -->
+    </div>
+
+    <!-- content 8  -->
+    <div class="pt-87">
+      <div class="pb-70">
+        <Image class="h-[400px] w-full " src="D:/git/mine/frontend-design-folder/images/special_image.jpg" width="1440"
+          height="400" alt="image9" />
+      </div>
+    </div>
+
+
+
+    <!-- content 9  -->
+    
+    
+    <div class="flex flex-col pl-62" id="contact_us">
+      <div class="text-xl font-bold pb-22 ms:pl-60">Contacts</div>
+      <div class="space-y-5">
+        <div><i class="fa-solid fa-user pr-15 text-[20px] text-gray-700"></i><a class="w-120 font-bold">Er.R.Raguram D.C.E.,B.E.,</a></div>
+        <div><i class="fa-brands fa-brands fa-whatsapp pr-15  text-[20px] text-green-700"></i><a class="w-120">7010311805</a></div>
+        <div><i class="fa-brands fa-brands fa-whatsapp pr-15  text-[20px] text-green-700"></i><a class="w-120">9025790322</a></div>
+        <div><i class="fa-solid fa-envelope pr-15 text-[20px] text-red-800"></i><a class="w-120">cholarr6@gmail.com</a></div>
+        <i class=""></i>
+      </div>
+    </div>
+
+    <div class="flex pl-62 space-x-30 -mt-57 pt-140 ms:pt-70">
+      <div class="text-[24px]"><i class="fa-brands fa-twitter text-[#1d9bf0]"></i></div>
+      <div class="text-[24px]"><i class="fa-brands fa-facebook text-[#385898]"></i></div>
+      <div class="text-[24px]"><i class="fa-brands fa-instagram text-[#E4405F]"></i></div>
+    </div>
+
+    <div class="flex ms:flex-none">
+      <div class="pl-320 -mt-[272px] pb-62 ms:pt-310 ms:pl-0 ms:pl-[40px]">
+        <iframe class="rounded-md ms:w-[250px] ms:h-[250px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31305.830518560826!2d79.71079963751079!3d11.244571130319803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54de0ffc741fbb%3A0x1ece704658e1c9bb!2sTamil%20Nadu%20609110!5e0!3m2!1sen!2sin!4v1667027077272!5m2!1sen!2sin"
+          width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex flex-col space-y-22 pl-90 -mt-[272px] ms:pt-600 ms:pl-0 ms:-ml-[280px] ms:text-center">
+        <div class="text-xl font-bold">Address</div>
+        <div class="w-[300px]"><i class="fa-solid fa-location-dot pr-15 text-red-700"></i>61B,Kadaiveethi,Sirkali-609110.</div>
+      </div>
+    </div>
+
+
+
+    
+  
+
+
+
+
+  
+    
+
+
+    <!-- <div class="flex flex-col pl-330">
+          <div class="text-xl font-bold">Subscribe to our newsletter</div>
+          <label class='pt-70'>Email address*</label>
+          <input class="bg-gray-300 h-[50px] w-[450px]" placeholder="Your email address"/>
+          <p class="pt-23"><button  type="button" class="focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-14 py-3.5 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Submit</button></p>
+        </div> -->
+    <!-- </div> -->
+
+
+
+
+   
+    <!-- <div class=''>
+        <div class="pl-62 flex">
+        <div class="flex flex-col space-y-22">
+          <div class="text-xl font-bold">Address</div>
+          <div class="w-120">61B,Kadaiveethi,Sirkali-609110.</div>
+        </div> -->
+
+  </div>
+  </div>
+  <!-- <script src="js/interior-design.js"></script> -->
+  
+  <script>
+  
+    document.addEventListener("scroll", function (e) {
+      var scrollPosition = document.getElementById('scrollbar_position1')
+      var x_range = scrollPosition.getBoundingClientRect().x;
+      var y_range = scrollPosition.getBoundingClientRect().y;
+      console.log("y_rangeee", y_range);
+
+      var var1 = document.getElementById("scrollbar_position")
+
+      if (y_range > 26) {
+        var1.className = "bg-white py-2 md:py-4 sticky top-0 shadow-lg"
+      }
+      if (y_range > 67) {
+        var1.className = "bg-white py-2 md:py-4 sticky top-0"
+      }
+    })
+
+    var id1 = document.getElementById("id1");
+    console.log("id1", id1);
+    var id2 = document.getElementById("id2");
+    var id3 = document.getElementById("id3");
+    var id4 = document.getElementById("id4");
+
+    document.getElementById("id1").addEventListener("click", function (e) {
+      // alert("hi");
+      id1.className = "p-2 lg:px-4 md:mx-2  text-black rounded  underline  hover:underline underline-offset-8  font-semibold";
+      id2.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold";
+      id3.className = "p-2 lg:px-4 md:mx-2  text-black rounded hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold ";
+      id4.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold ";
+      console.log("id1", id2);
+
+    })
+
+    document.getElementById("id2").addEventListener("click", function (e) {
+      id1.className = "p-2 lg:px-4 md:mx-2  text-black rounded no-underline hover:underline  underline-offset-8  font-semibold";
+      id2.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 underline  underline-offset-8 font-semibold";
+      id3.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold no-underline";
+      id4.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold no-underline";
+      console.log("id1", id2);
+
+    })
+
+    document.getElementById("id3").addEventListener("click", function (e) {
+      id1.className = "p-2 lg:px-4 md:mx-2  text-black rounded no-underline hover:underline  underline-offset-8  font-semibold";
+      id2.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 no-underline hover:underline  underline-offset-8  font-semibold";
+      id3.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline underline-offset-8  font-semibold";
+      id4.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline underline-offset-8  font-semibold no-underline";
+      console.log("id1", id2);
+
+    })
+
+
+    document.getElementById("id4").addEventListener("click", function (e) {
+      id1.className = "p-2 lg:px-4 md:mx-2  text-black rounded hover:underline  underline-offset-8 font-semibold";
+      id2.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline  underline-offset-8 font-semibold";
+      id3.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 hover:underline  underline-offset-8  font-semibold no-underline";
+      id4.className = "p-2 lg:px-4 md:mx-2  text-black rounded  hover:text-gray-700 transition-colors duration-300 underline underline-offset-8  font-semibold";
+      console.log("id1", id2);
+
+    })
+
+
+  </script>
+</body>
+
+</html>
