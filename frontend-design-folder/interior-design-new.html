@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <script>
@@ -18,8 +18,10 @@
           padding: {
             '2': '2px',
             '10': '10px',
+            '12': '12px',
             '15': '15px',
             '3': '3px',
+            '5': '5px',
             '16': '16px',
             '20': '20px',
             '22': '22px',
@@ -33,11 +35,13 @@
             '23': '23px',
             '60': '60px',
             '50': '50px',
+            '55': '55px',
             '62': '62px',
             '64': '64px',
             '68': '68px',
             '48': '48px',
             '57': '57px',
+            '80': '80px',
             '83': '83px',
             '84': '84px',
             '100': '100px',
@@ -51,6 +55,7 @@
             '167': '167px',
             '171': '171px',
             '178': '178px',
+            '180': '180px',
             '302': '302px',
             '164': '164px',
             '170': '170px',
@@ -66,6 +71,7 @@
             '330': '330px',
             '400': '400px',
             '600': '600px',
+            '640': '640px',
             '700': '700px',
 
           },
@@ -102,22 +108,25 @@
           width: {
             '120': '120px',
           },
-          animation: {
-        'flip-anim': 'flip-with-rotate',
-        'circular': 'orbit 20s linear infinite',
-        'circularDesk': 'orbitDesk 20s linear infinite',
-         },
-          keyframes: {
-        'flip-with-rotate': {
-          '0%': { transform: 'perspective(400px) rotateY(0)' },
+      //     animation: {
+      //   'flip-anim': 'flip-with-rotate',
+      //   'circular': 'orbit 20s linear infinite',
+      //   'circularDesk': 'orbitDesk 20s linear infinite',
+      //    },
+      //     keyframes: {
+      //   'flip-with-rotate': {
+      //     '0%': { transform: 'perspective(400px) rotateY(0)' },
        
-          '100%': { transform: 'perspective(400px) rotateY(180deg)' },
-        },
-      },
+      //     '100%': { transform: 'perspective(400px) rotateY(180deg)' },
+      //   },
+      // },
         screens: {
         ms: '320px',
         // ms_gap: "350px",
-        // ms1: "375px",
+        ms0: "360px",
+        ms1: "375px",
+        ms2: "390px",
+        xs0:'414px',
         // xs_before: "400px",
         xs: '425px',
         sm: '640px',
@@ -137,7 +146,7 @@
   <div>
 
     <!-- content 1  -->
-    <nav class="bg-white py-2 md:py-4 sticky top-0" id="scrollbar_position">
+    <nav class="bg-white py-2 md:py-4  sticky top-0 " id="scrollbar_position">
       <div class="container px-4 mx-auto md:flex md:items-center">
 
         <div class="flex  items-center ms:p-2.5">
@@ -149,9 +158,9 @@
           <a href="#" class="font-bold text-3xl text-indigo-600 text-black">Chola</a>
           </div>
         
-          <div class="ms:ml-[120px]">
+          <div class="ms:ml-[120px] ms0:ml-[170px] ms1:ml-[180px] xs0:ml-[225px] sm:ml-[450px]">
           
-          <button
+          <button 
             class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
             id="navbar-toggle">
             <i class="fas fa-bars"></i>
@@ -183,6 +192,8 @@
       </div>
     </nav>
 
+    
+
     <!-- content 2 -->
     <div id="scrollbar_position1" class="">
       <!-- <div class="relative">
@@ -192,35 +203,60 @@
         <img class="  ms:w-[90px] ms:h-[90px] cursor-pointer absolute top-0 left-0 mt-32 ml-40 hover:shadow-outline" src="D:/git/mine/frontend-design-folder/images/home2.webp" width="300" height="300" />
       
       </div> -->
-      <div class="ms:flex ms:justify-center pt-84">
+    
+     <!-- <div class="ms:flex ms:flex-col pt-84 ms:pt-20 ms:-ml-[80px] sm:-ml-[170px]"> -->
 
-      <div class="ms:flex ms:flex-col">
+      <!-- <div class=""> -->
+        <div class="ms:ml-[30px]  ms0:flex ms0:flex-col  ms0:-mt-[44px] ms0:ml-[115px] ms1:ml-[125px] ms2:ml-[130px] xs0:ml-[145px] sm:ml-[240px]">
+        <div id="f1_container" class="">
+          <div id="f1_card" class="ms0:mt-[55px]  ms0:-ml-[65px]">
+              <div class="front face">
+                  <img class="sm:w-[150px] sm:h-[150px]"  src="D:/git/mine/furniture_website/frontend-design-folder/images/home1.webp" width="130px" height="130px"/>
+              </div>
+              <div class="back face">
+                  <img class="sm:w-[150px] sm:h-[150px]"  src="D:/git/mine/furniture_website/frontend-design-folder/images/home1.webp" width="130px" height="130px"/>
+              </div>
+          </div>
+        </div>
+        <div id="f1_container"  class="">
+          <div id="f1_card" class="ms:ml-[130px] ms0:ml-[65px] ms0:mt-[20px] ms:-mt-[32px] sm:ml-[85px] sm:mt-[50px]">
+              <div class="front face">
+                  <img class="sm:w-[150px] sm:h-[150px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg" width="130px" height="130px"/>
+              </div>
+              <div class="back face">
+                  <img class="sm:w-[150px] sm:h-[150px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg" width="130px" height="130px"/>
+              </div>
+          </div>
+        </div>
+      </div>
+      
 
-      <div id="f1_container">
-        <div id="f1_card" class="shadow">
+      <div id="">
+        
+        <!-- <div id="f1_card" class="-ml-[28px] mt-[22px]">
           <div class="front face">
-            <img class="ms:w-[120px] ms:h-[120px]" src="D:/git/mine/frontend-design-folder/images/home1.webp"/>
+            <img class="ms:w-[120px] ms:h-[120px]  ms0:w-[130px] ms0:h-[130px] ms1:w-[150px] ms1:h-[150px] ms2:w-[150px] ms2:h-[150px] rounded sm:w-[250px] sm:h-[250px]" src="D:/git/mine/frontend-design-folder/images/home1.webp"/>
           </div>
           <div class="back face">
-            <img class="ms:w-[120px] ms:h-[120px]"  src="D:/git/mine/frontend-design-folder/images/home1.webp"/>
+            <img class="ms:w-[120px] ms:h-[120px] ms0:w-[130px] ms0:h-[130px] ms1:w-[150px] ms1:h-[150px] ms2:w-[150px] ms2:h-[150px] sm:w-[250px] sm:h-[250px] rounded"  src="D:/git/mine/frontend-design-folder/images/home1.webp"/>
           </div>
         </div>
         </div>
        
-      <div id="f1_container">
-        <div id="f1_card" class="shadow">
+       <div id="f1_container" class="ms:pl-80 sm:pl-200">
+        <div id="f1_card" class="pl-20" >
           <div class="front face">
-            <img class="ms:w-[120px] ms:h-[120px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg"/>
+            <img class="ms:w-[120px] ms:h-[120px]  ms0:w-[130px] ms0:h-[130px] ms1:w-[150px] ms1:h-[150px] ms2:w-[150px] ms2:h-[150px] rounded sm:w-[250px] sm:h-[250px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg"/>
           </div>
           <div class="back face">
-            <img class="ms:w-[120px] ms:h-[120px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg"/>
+            <img class="ms:w-[120px] ms:h-[120px]  ms0:w-[130px] ms0:h-[130px] ms1:w-[150px] ms1:h-[150px] ms2:w-[150px] ms2:h-[150px] rounded sm:w-[250px] sm:h-[250px]" src="D:/git/mine/furniture_website/frontend-design-folder/images/home4.jpg"/>
           </div>
         </div>
-        </div>
+        </div>  -->
 
-      </div>
+       <!-- </div>  -->
 
-      <div class="ms:flex ms:flex-col">
+       <!-- <div class=""> 
 
         <div id="f1_container">
           <div id="f1_card" class="shadow">
@@ -244,14 +280,14 @@
             <img class="ms:w-[120px] ms:h-[120px]"  src="D:/git/mine/furniture_website/frontend-design-folder/images/home2.webp"/>
           </div>
         </div>
-        </div>
+        </div> 
 
      
 
-      </div>
+      </div>  -->
 
       </div>
-       <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
+      <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>  -->
 
       <!-- 1st ex -->
       <!-- <div class="ms:w-[200px] ms:h-[200px] ms:flex ms:flex-wrap ms:ml-[60px] ms:mt-[50px]">
@@ -288,7 +324,7 @@
 
      </div> -->
       <!-- 2st ex -->
-      <div class="flex items-center flex-col pt-28 space-y-[20px]">
+      <div class="flex items-center flex-col pt-48 space-y-[10px] sm:text-center ms:-mt-[80px] ms0:-mt-[60px] sm:mt-[20px]">
        <!-- <div class="ms:flex ms:flex-wrap ms:w-[200px] ms:h-[200px]"> -->
        <!-- <img   src="D:/git/mine/frontend-design-folder/images/home1.webp" class="ms:w-[100px] ms:h-[100px]" alt="chola_home"/> -->
        <!-- <img src="D:/git/mine/frontend-design-folder/images/home2.webp" class="ms:w-[100px] ms:h-[100px] " alt="chola_home"/>
@@ -300,9 +336,9 @@
        <!-- <img src="" class="ms:flex-none ms:w-[100px] ms:h-[100px] border border-black" alt="chola_home"/>
        <img src="" class="ms:flex-none ms:w-[100px] ms:h-[100px] border border-black" alt="chola_home"/> -->
        <!-- </div> -->
-        <p class="font-serif  font-semibold text-9xl text-sky-500 ms:text-center ms:text-2xl">Chola</p>
-        <p class="font-serif font-semibold text-3xl ms:text-center  ms:text-lg xs:w-full">Security Solution & Interior Works</p>
-        <p class="font-serif text-2xl text-[#ff834f] ms:text-center ms:text-lg">"We are here to do better"</p>
+        <p class="font-serif  font-semibold text-9xl text-sky-500 ms:text-center ms:text-3xl ms0:text-3xl ms1:text-3xl sm:text-3xl">Chola</p>
+        <p class="font-serif font-semibold text-3xl ms:text-center ms:text-2xl ms0:text-2xl ms1:text-2xl sm:text-2xl">Security Solution & Interior Works</p>
+        <p class="font-serif text-2xl text-[#ff834f] ms:text-center ms:text-2xl ms0:text-2xl ms1:text-2xl sm:text-2xl">"We are here to do better"</p>
         <!-- <p class="pt-48"><button type="button"
             class="focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-14 py-3.5 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Our
             Store</button></p> -->
@@ -311,44 +347,44 @@
     </div>
 
     <!-- heading content addded -->
-    <div class="font-serif ms:text-sky-500 text-center p-5 text-4xl font-semibold ms:text-xl"><p>Security Solution</p></div>
+    <div class="font-serif ms:text-sky-500 text-center p-5 text-4xl font-semibold  sm:text-3xl ms:text-3xl ms1:text-3xl"><p>Security Solution</p></div>
 
     <!-- content 3 -->
     <div class="pt-20" id="security_solutions">
-      <div class="md:flex justify-center px-10 mx-auto">
-        <Image class="mr-25 rounded shadow-xl ms:rounded ms:w-[300px] ms:h-[300px]" src="D:/git/mine/frontend-design-folder/images/cctv1.jpg" width="392" height="432"
-          alt="image1" />
-        <Image class="rounded shadow-xl mr-25 -translate-y-[65px] ms:translate-y-[0px] ms:rounded ms:w-[300px] ms:h-[300px]" src="D:/git/mine/frontend-design-folder/images/Master.webp" width="392" height="432" alt="image2" />
-        <Image class="rounded shadow-xl ms:top-0 ms:rounded ms:w-[300px] ms:h-[300px]" src="D:/git/mine/frontend-design-folder/images/cctv3.jpg" width="392" height="432"
+      <div class="md:flex md:justify-center px-10 mx-auto ms0:flex ms0:flex-col ms0:items-center  ms1:flex ms1:flex-col ms1:items-center">
+        <Image class="mr-25 rounded shadow-xl ms:rounded ms:w-[300px] ms:h-[300px] ms0:mr-0 ms1:mr-0  xs0:w-[330px] xs0:h-[330px] sm:w-[350px] sm:h-[350px]" src="D:/git/mine/frontend-design-folder/images/cctv1.jpg" width="392" height="432"
+          alt="image1"/>
+        <Image class="rounded shadow-xl mr-25 -translate-y-[65px] ms:translate-y-[0px] ms:rounded ms:w-[300px] ms:h-[300px] ms0:mr-0 ms1:mr-0  xs0:w-[330px] xs0:h-[330px]  sm:w-[350px] sm:h-[350px]" src="D:/git/mine/frontend-design-folder/images/Master.webp" width="392" height="432" alt="image2" />
+        <Image class="rounded shadow-xl ms:top-0 ms:rounded ms:w-[300px] ms:h-[300px]  xs0:w-[330px] xs0:h-[330px]  sm:w-[350px] sm:h-[350px]" src="D:/git/mine/frontend-design-folder/images/cctv3.jpg" width="392" height="432"
           alt="image3" />
       </div>
     </div>
 
     <!-- content 4  -->
-    <div class="xs:pt-160 ms:pt-5">
-      <div class="xs:pl-167 ms:pl-0 ms:text-center ms:pb-10">
+    <div class="ms:pt-5">
+      <div class="ms:pl-0 ms:text-center ms:pb-10">
         <p>WHO WE ARE</p>
       </div>
-      <div class="xs:pl-171 xs:flex xs:space-x-317 ms:pl-0 ms:flex ms:flex-col  ms:space-y-10">
-        <div class="xs:max-w-280 xs:text-5xl ms:text-2xl pl-22 ms:text-center">It's not just Camera - it's our security</div>
-        <div class="xs:max-w-[280px] ms:text-sm pl-22">CCTV systems are able to keep track of what is happening at the premises where they are
+      <div class="ms:pl-0 ms:flex ms:flex-col  ms:space-y-10 xs0:text-center ms2:text-center ">
+        <div class="pl-22  ms:text-2xl  ms:text-center xs0:max-w-[300px] xs0:ml-[20px] sm:max-w-[600px]">It's not just Camera - it's our security</div>
+        <div class="pl-22  ms:text-sm ms0:text-center ms0:max-w-[340px]  ms1:w-[325px] ms1:ml-[24px] sm:max-w-[640px] sm:text-xl sm:ml-[160px]">CCTV systems are able to keep track of what is happening at the premises where they are
           installed. By monitoring the activity of workers and visitors at your business’ site, you and your workforce
           can have total peace of mind about exactly what is going on under your roof.</div>
       </div>
       <div>
         <!-- content 5 -->
         <div class="ms:pt-5">
-          <div class="pt-302 pl-164 ms:pl-0 ms:pt-0  ms:text-center ms:pb-10">OUR CREDO</div>
+          <div class="pt-302 pl-164 ms:pl-0 ms:pt-0  ms:text-center ms:pb-10 xs0:text-center">OUR CREDO</div>
 
           <div class="pl-170 flex space-x-40 ms:space-x-0 ms:pl-0 ms:flex flex-col" id="interior_works">
-            <div class="flex flex-col space-y-38 ms:space-y-10">
-              <div class="max-w-300 text-5xl ms:text-2xl ms:text-center">Interior Works and Desgins</div>
-              <div class="max-w-374 ms:pb-22 ms:max-w-[290px] ms:text-sm ms:pl-35">We have made quality our habit. It’s not something that we just strive for – we
+            <div class="flex flex-col space-y-38 ms:space-y-10 ms2:text-center">
+              <div class="max-w-300 text-5xl ms:text-2xl ms:text-center xs0:text-center">Interior Works and Desgins</div>
+              <div class="max-w-374 ms:pb-22 ms:max-w-[290px] ms:text-sm ms:pl-35 ms0:text-center ms0:max-w-[340px] ms1:max-w-[350px] ms1:ml-[7px] xs0:text-center sm:text-xl sm:text-center sm:ml-[130px]">We have made quality our habit. It’s not something that we just strive for – we
                 live by this principle every day.While most of the things about the creative process will be forgotten, the excellence of our products
                 and services will be remembered.</div>
             </div>
-            <div class="-mt-90 ms:-mt-0 ms:animate-flip-anim">
-              <Image id="check" class="rounded  ms:w-[280px] ms:h-[200px] ms:pl-40 ms:rounded" src="D:/git/mine/frontend-design-folder/images/interior_designs.jpg" class="" width="600"
+            <div class="-mt-90 ms:-mt-0 ms:pb-2.5">
+              <Image id="check" class="rounded ms:w-[280px] ms:h-[200px] ms:pl-40 ms:rounded ms0:ml-[20px] ms1:-ml-[5px] ms1:w-[350px] ms1:h-[270px] ms2:ml-[8px] xs0:ml-[12px] sm:w-[400px] sm:ml-[120px]" src="D:/git/mine/frontend-design-folder/images/interior_designs.jpg" class="" width="600"
                 height="496" />
             </div>
           </div>
@@ -455,26 +491,28 @@
 
     <!-- content 7 -->
     <div>
-      <div class="pt-200 pl-170 flex space-x-65 ms:pl-0 ms:space-x-0 ms:flex flex-col ms:pt-5">
+      <div class="pt-200 pl-170 flex space-x-65 ms:pl-0 ms:space-x-0 ms:flex flex-col ms:pt-5 ms1:space-x-0">
         <div class="flex flex-col space-y-42 ms:text-center ms:space-y-10">
-          <div class="text-5xl ms:text-2xl">Contact us</div>
-          <div class="ms:text-center ms:pb-20">Left your e-mail and we will contact you soon</div>
+          <div class="text-5xl ms:text-2xl sm:text-3xl">Contact us</div>
+          <div class="ms:text-center ms:pb-20 sm:text-xl">Left your e-mail and we will contact you soon</div>
           <!-- <div class="font-serif text-xl">Er.R.Raguram DCE.,B.E.,</div>
             <div class="font-serif text-xl">7010311805-9025790322</div>
             <div class="font-serif text-xl">cholarr6@gmail.com</div>
             <div class="font-serif text-xl">61B,Kadaiveethi,Sirkali-609110</div> -->
         </div>
-        <div class="flex flex-col ms:pl-8 ms:max-w-[280px]">
+        <div class="flex flex-col ms:pl-8 ms:max-w-[280px] ms1:ml-[25px]">
           <!-- <label>Name</label> -->
           <!-- <input class="bg-gray-300 h-[50px] w-[550px] mb-[33px] ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Your Name" /> -->
-          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Name</legend><input id="name" name="first_name" type="text" autocomplete="email" class="h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
+          <form class="ms0:ml-[18px] ms1:flex ms1:flex-col ms1:ml-[25px]  xs0:ml-[50px] sm:ml-[150px]">
+          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Name</legend><input id="name" name="first_name" type="text" autocomplete="email" class="sm:h-10 sm:w-[250px] h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
           </fieldset>
-          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Last Name</legend><input id="name" name="first_name" type="text" autocomplete="email" class="h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
+          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Last Name</legend><input id="name" name="first_name" type="text" autocomplete="email" class="sm:h-10 sm:w-[250px] h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
           </fieldset>
-          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Email</legend><input id="name" name="first_name" type="text" autocomplete="email" class="h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
+          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Email</legend><input id="name" name="first_name" type="text" autocomplete="email" class="sm:h-10 sm:w-[250px] h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
           </fieldset>
-          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Message</legend><input id="name" name="first_name" type="text" autocomplete="email" class="h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
+          <fieldset class="mx-2 md:mx-0 w-[150px] md:w-full flex items-center border rounded border-gray-400"><legend class="ml-5 text-sm text-gray-600">Message</legend><input id="name" name="first_name" type="text" autocomplete="email" class="sm:h-10 sm:w-[250px] h-6 w-[245px] text-sm text-gray-800 pl-2 pr-2 pb-2 rounded-lg focus:outline-none focus:ring-[#ff7a43] focus:border-[#ff7a43]">
           </fieldset>
+         
           <!-- <label>Last Name</label> -->
           <!-- <input class="bg-gray-300 h-[50px] w-[550px]  mb-[33px]  ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Last Name" /> -->
           <!-- <label>Email</label> -->
@@ -483,17 +521,17 @@
           <!-- <input class="bg-gray-300 h-[94px] w-[550px]  ms:h-[30px] ms:w-[280px] xs:w-full" placeholder="Enter Your Message" /> -->
         </div>
       </div>
-      <p class="pt-5 text-center">
+      <p class="pt-5 text-center pt-2.5">
         <button type="button"
-          class="ms:rounded-lg focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-7 py-3 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50">Contact
+          class="ms:rounded-lg focus:outline-none text-white bg-red-800 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium  text-sm px-7 py-3 mr-2 mb-2 dark:focus:ring-yellow-900 opacity-50 sm:py-5">Contact
           me</button></p>
-
+        </form>
     </div>
 
     <!-- content 8  -->
     <div class="pt-5">
       <div class="pb-5">
-        <Image class="h-[400px] w-full ms:w-[320px] ms:h-[300px] ms:pl-[]" src="D:/git/mine/frontend-design-folder/images/special_image.jpg" width="1440"
+        <Image class="h-[400px] w-full ms:w-[375px] ms:h-[300px] ms1:w-[375px] ms1:h-[300px] ms2:w-[390px]  xs0:w-[414px] xs0:h-[300px] sm:w-[640px]" src="D:/git/mine/frontend-design-folder/images/special_image.jpg" width="1440"
           height="400" alt="image9"/>
       </div>
     </div>
@@ -502,11 +540,11 @@
 
     <!-- content 9  -->
     
-    
+    <div class="ms0:ml-[16px] ms1:pl-25 xs0:pl-50 sm:ml-[70px]">
     <div class="flex flex-col pl-62" id="contact_us">
-      <div class="text-xl font-bold pb-22  ms:pl-60 ms:pb-5">Contacts</div>
-      <div class="space-y-5">
-        <div><i class="fa-solid fa-user pr-15 text-[20px] text-gray-700"></i><a class="w-120 font-bold">Er.R.Raguram D.C.E.,B.E.,</a></div>
+      <div class="text-xl font-bold pb-22  ms:pl-60 ms:pb-5 sm:text-3xl">Contacts</div>
+      <div class="space-y-5 sm:text-xl">
+        <div><i class="fa-solid fa-user pr-15 text-[20px] text-gray-700"></i><a class="w-120 font-bold sm:text-xl" >Er.R.Raguram D.C.E.,B.E.,</a></div>
         <div><i class="fa-brands fa-brands fa-whatsapp pr-15  text-[20px] text-green-700"></i><a class="w-120">7010311805</a></div>
         <div><i class="fa-brands fa-brands fa-whatsapp pr-15  text-[20px] text-green-700"></i><a class="w-120">9025790322</a></div>
         <div><i class="fa-solid fa-envelope pr-15 text-[20px] text-red-800"></i><a class="w-120">cholarr6@gmail.com</a></div>
@@ -518,22 +556,25 @@
 
     <div class="flex ms:flex-none ms:-mt-[22px]">
       <div class="pl-320 -mt-[272px] pb-62 ms:pt-310 ms:pl-0 ms:pl-[40px]">
-        <iframe class="rounded-md ms:w-[250px] ms:h-[250px]"
+        <iframe class="rounded-md ms:w-[250px] ms:h-[250px] sm:w-[350px] sm:h-[350px] sm:pl-10"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31305.830518560826!2d79.71079963751079!3d11.244571130319803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54de0ffc741fbb%3A0x1ece704658e1c9bb!2sTamil%20Nadu%20609110!5e0!3m2!1sen!2sin!4v1667027077272!5m2!1sen!2sin"
           width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="flex flex-col space-y-22 pl-90 -mt-[272px] ms:space-y-5 ms:-mt-[302px] ms:pt-600 ms:pl-0 ms:-ml-[280px] ms:text-center">
-        <div class="text-xl font-bold">Address</div>
-        <div class="w-[300px] pb-2.5"><i class="fa-solid fa-location-dot pr-15 text-red-700"></i>61B,Kadaiveethi,Sirkali-609110.</div>
+      <div class="flex flex-col space-y-22 pl-90 -mt-[272px] ms:space-y-5 ms:-mt-[302px] ms:pt-600 ms:pl-0 ms:-ml-[280px] ms:text-center sm:-mt-[190px] sm:-ml-[300px]">
+        <div class="text-xl font-bold sm:text-3xl">Address</div>
+        <div class="w-[300px] pb-2.5 sm:text-xl"><i class="fa-solid fa-location-dot pr-15 text-red-700"></i>61B,Kadaiveethi,Sirkali-609110.</div>
       </div>
     </div>
-    <div class="flex pl-62 space-x-30 -mt-57 pt-140 ms:flex ms:justify-center ms:pt-0 ms:pl-0 ms:-mt-[0px]">
+    <div class="ms2:-ml-[40px]">
+    <div class="flex pl-62 space-x-30 -mt-57 pt-140 ms:flex ms:justify-center ms:pt-0 ms:pl-0 ms:-mt-[0px] ms2:-pl-3 xs0:flex xs0:justify-center xs0:-ml-[15px]">
       <div class="text-[24px]"><i class="fa-brands fa-twitter text-[#1d9bf0]"></i></div>
       <div class="text-[24px]"><i class="fa-brands fa-facebook text-[#385898]"></i></div>
       <div class="text-[24px]"><i class="fa-brands fa-instagram text-[#E4405F]"></i></div>
     </div>
+  </div>
+  </div>
 
 
 
@@ -572,10 +613,9 @@
   
   <script>
   
-  window.onload = (event) => {
-   var flipBox = document.getElementById("flip-box");
-   console.log("flipBox",flipBox)
-   flipBox.click()
+  
+   
+
   //   var image_1 = document.getElementById("image_1");
     
   //   var interval = setInterval(function() {
@@ -651,7 +691,6 @@
 //     imageOne.className ="ms:w-[100px] ms:h-[100px] ms:rotate-180"
 //   },5000);
   
-};
 
     document.addEventListener("scroll", function (e) {
       var scrollPosition = document.getElementById('scrollbar_position1')

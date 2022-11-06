@@ -2,42 +2,183 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style2.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      padding: {
+        '2': '2px',
+        '10': '10px',
+        '15': '15px',
+        '3': '3px',
+        '16': '16px',
+        '20': '20px',
+        '22': '22px',
+        '23': '23px',
+        '25': '25px',
+        '28': '28px',
+        '30': '30px',
+        '40': '40px',
+        '35': '35px',
+        '38': '38px',
+        '23': '23px',
+        '60': '60px',
+        '50': '50px',
+        '62': '62px',
+        '64': '64px',
+        '68': '68px',
+        '48': '48px',
+        '57': '57px',
+        '83': '83px',
+        '84': '84px',
+        '100': '100px',
+        '113': '113px',
+        '90': '90px',
+        '140': '140px',
+        '150': '150px',
+        '160': '160px',
+        '164': '164px',
+        '167': '167px',
+        '171': '171px',
+        '178': '178px',
+        '302': '302px',
+        '164': '164px',
+        '170': '170px',
+        '200': '200px',
+        '272': '272px',
+        '27': '27px',
+        '87': '87px',
+        '70': '70px',
+        '196': '196px',
+        '310': '310px',
+        '320': '320px',
+        '300': '300px',
+        '330': '330px',
+        '400': '400px',
+        '600': '600px',
+        '700': '700px',
+
+      },
+      margin: {
+        '25': '25px',
+        '64': '64px',
+        '84': '84px',
+        '57': '57px',
+
+      },
+      maxWidth: {
+        '118': '118px',
+        '218': '218px',
+        '304': '304px',
+        '374': '374px',
+        '390': '390px',
+      },
+      space: {
+        '22': '22px',
+        '5': '5px',
+        '10': '10px',
+        '30': '30px',
+        '35': '35px',
+        '38': '38px',
+        '42': '42px',
+        '18': '18px',
+        '40': '40px',
+        '50': '50px',
+        '70': '70px',
+        '65': '65px',
+        '317': '317px',
+
+      },
+      width: {
+        '120': '120px',
+      },
+      animation: {
+    'flip-anim': 'flip-with-rotate',
+    'circular': 'orbit 20s linear infinite',
+    'circularDesk': 'orbitDesk 20s linear infinite',
+     },
+      keyframes: {
+    'flip-with-rotate': {
+      '0%': { transform: 'perspective(400px) rotateY(0)' },
+   
+      '100%': { transform: 'perspective(400px) rotateY(180deg)' },
+    },
+  },
+    screens: {
+    ms: '320px',
+    // ms_gap: "350px",
+    // ms1: "375px",
+    // xs_before: "400px",
+    xs: '425px',
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1140px',
+    xxl: '1536px',
+    tap: "700px",
+  },
+    }
+  }
 }
-
-
-
-.flip-box-inner {
-  
-
- 
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-
-
-
-</style>
+</script>
 </head>
 <body>
 
 
-
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="D:/git/mine/frontend-design-folder/images/home1.webp" alt="Paris" style="width:300px;height:200px">
+  <!-- <div class="card flip_effect" id="my"  data-id="1">
+    <div class="card_front">
+        <span class="card_text">
+            <img src="https://i.ibb.co/nDsK28Y/logo.png"   width="90px" height="90px">
+        </span>
     </div>
-   
+    <div class="card_back">
+        <span class="card_text">
+            <img src="https://i.ibb.co/nDsK28Y/logo.png"  width="90px" height="90px">
+        </span>
+    </div>
+</div> -->
+
+
+
+<div id="f1_container">
+  <div id="f1_card" class="">
+      <div class="front face">
+          <img src="https://i.ibb.co/nDsK28Y/logo.png"/>
+      </div>
+      <div class="back face">
+          <img src="https://i.ibb.co/nDsK28Y/logo.png"/>
+      </div>
   </div>
 </div>
+
+        
+<script>
+ 
+
+  // (function() {
+  //       var cards = document.querySelectorAll(".card.flip_effect");
+  //       var timeFlip = 1000; // FLIP EVERY 3 SECONDS
+  //       var timeouts = [];
+  //       for ( var i = 0, len = cards.length; i < len; i++ ) {
+  //           var card = cards[i];
+  //           var cardID = card.getAttribute("data-id");
+  //           var id = "timeoutID" + cardID;
+  //           cardsTimeout( id, timeFlip, card );
+  //       }
+  //       function cardsTimeout( id, timeFlip, card ) {
+  //           if (id in timeouts) {
+  //               clearTimeout(timeouts[id]); }
+  //           timeouts[id] = setTimeout( function() {
+  //               var c = card.classList;
+  //               c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+  //               cardsTimeout( id, timeFlip, card );
+  //           }, timeFlip );
+  //       }
+  //   })();
+  
+</script>
 
 </body>
 </html>
